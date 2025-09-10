@@ -1,0 +1,81 @@
+body {
+  background-color: rgba(164, 164, 159, 0.25);
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.wrapper {
+  margin-top: 1rem;
+  max-width: 200px;
+}
+
+.carousel-instructions {
+  color: rgb(8, 8, 8);
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  line-height: 1rem;
+}
+
+@media (min-width: 575.6px) {
+  .carousel-instructions {
+    font-size: 1.0rem;
+    margin-bottom: 1rem;
+  }
+
+  .wrapper {
+    max-width: 335px;
+    min-width: 280px;
+  }
+}
+
+@media (min-width:575.7px) and (max-width:767.6px) {
+  .carousel-instructions {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .wrapper {
+    min-width: 330px;
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 767.7px) and (max-width: 991.6px) {
+
+  .carousel-instructions {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .wrapper {
+    min-width: 350px;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 991.7px) and (max-width:1191.6px) {
+  .carousel-instructions {
+    font-size: 1rem;
+    margin-bottom: 1.0rem;
+  }
+
+  .wrapper {
+    min-width: 350px;
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 1192.7px) {
+  .carousel-instructions {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .wrapper {
+    min-width: 350px;
+    max-width: 400px;
+  }
+}

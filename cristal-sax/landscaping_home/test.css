@@ -1,0 +1,448 @@
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    font-family: 'Tinos', serif;  
+    /* background-color: #eae4e4; */
+    /* color: black; */
+    color:mintcream;
+    background-color: black;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0.88;
+    position: fixed;
+    bottom: 90px;
+    right: 5px;
+    width: 220px;
+    letter-spacing: .4rem;
+    display: none;
+  }
+  
+  @media (max-width: 810px) {
+    .open-button {
+        line-height: normal;
+        font-size: 1.1em;
+        text-align: center;
+        width: 130px;
+        letter-spacing: .2rem;
+        right: 0px;
+        padding: .5rem
+    }
+}
+
+  @keyframes flicker {
+      from {
+          text-shadow:
+          0 0 .3125rem #1ef706,0 0 .625rem #1ef706,
+          0 0 1.25rem #1ef706,0 0 2.5rem #1ef706;
+      }
+  }
+  
+  .open-button {
+      animation: flicker 1.5s ease-in-out infinite alternate;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 275px;
+    padding: 5px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=text] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  
+  nav {
+      border-bottom: black;
+      border-bottom-style:outset;
+      border-bottom-width: .5rem;
+      border-bottom-left-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+  }
+  
+  .maximum {
+      max-width: 1100px;
+      min-width: 325px;
+      margin:0;
+  }
+  
+  body {
+      padding-top: 2.4rem;
+      padding: 0 .25rem 0 .25rem;
+      margin: 0;
+      scroll-behavior:initial;
+  }
+  
+  .super-container,
+  footer {
+      margin-right:0;
+      transform: translateY(5rem);
+  }
+  
+  
+  #heading {
+      font-family:'Times New Roman', Times, serif;
+      transform: translateY(4.5rem);
+      padding: 1rem;
+      margin: 1rem;
+      /* background-color: whitesmoke; */
+      text-align: center;
+      justify-content: center;
+      font-style: italic;
+      font-weight:bold;
+      color: white;
+      font-size: 2.2em;
+      letter-spacing:.55rem;
+      text-shadow: .25rem .25rem .5rem #000000;
+  }
+  
+  p {
+      font-weight: bold;
+  }
+  
+  #message-sched {
+      margin-top: 6.25rem;
+  }
+  
+  
+  #lucie-text {
+      transform: translateY(-2.5rem);
+      font-size: .6em;
+      font-style:italic;
+      padding-bottom: 1rem;
+      /* line-height: 1rem; */
+  }
+  
+  #phone-number-middle {
+      text-align: center;
+      align-self: center;
+      justify-content: center;
+      justify-self: center;
+      max-width: 31rem;
+      margin-top: 1.2rem;
+      padding: .5rem;
+      font-style: italic;
+      /* background-color:whitesmoke; */
+  }
+  /* 
+  html {
+      background-color:paleturquoise
+  } */
+  
+  #daniel {
+      padding-top:1rem;
+      margin-top: 4rem;
+  }
+  
+  .dan-img,
+  #dan-fig {
+      transform: translateY(-2rem);
+  }
+  
+  .schedule,
+  .message-sched {
+      display: none;
+  }
+  
+  
+  .message-div {
+      display:none;
+      /* background-color:whitesmoke !important; */
+      margin-top: 3rem;
+      font-style: italic !important;
+  }
+  
+  #sched1 {
+      overflow-y:visible;
+  }
+  
+  #sched2,
+  #phone-number-middle {
+      align-self: center;
+      justify-self: center;
+      transform:translateY(-5rem);
+      font-style: italic;
+  }
+  
+  
+  #move-sched {
+      width: 31.25rem;
+      transform: translateY(5rem);
+  }
+  
+  .scrollspy-example::-webkit-scrollbar {
+      -webkit-appearance: none !important;
+      width: .5rem !important;
+  }
+  
+  .scrollspy-example::-webkit-scrollbar-thumb {
+      border-radius: .25rem !important;
+      background-color: rgba(0,0,0,.5) !important;
+      -webkit-box-shadow: 0 0 2px rgba(255, 255, 255, .5) !important;
+  }
+  
+  .scrollspy-example {
+      max-height: 20rem;
+      overflow-y: scroll;
+  }
+  .spy-list {
+      
+      font-size: 1em;
+      color: rgb(255, 255, 255);
+      font-weight: bolder;
+  }
+  
+  .spy-links {
+      font-size: .8em;
+      text-align:center;
+      font-weight: bold;
+  }
+   
+  .spy-left {
+      max-width: 200px;
+  }
+  .spy {
+      max-width: 250px;
+      scroll-margin-bottom: -22rem;
+      /* transform: translateY(2rem) */
+  }
+  
+  .serv-info {
+      font-size:.8rem;
+  }
+  
+  #services {
+      text-align: center;
+      justify-content: center;
+      justify-self: center;
+      margin-top: 2rem;
+      /* background-color:whitesmoke; */
+      font-size:2rem;
+  }
+  
+  #motto {
+      margin-top: -1.4rem;
+      text-align: center;
+      font-size: 1.2em;
+      font-style: italic;
+      padding: 1rem;
+      /* background-color: whitesmoke; */
+  }
+  
+  li {
+      font-size: 1.2em;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      line-height: .85rem;
+  }
+  
+  #img1,
+  #scott-webb,
+  .melanie-block {
+      transform: translateY(-7rem);
+  }
+  
+  .class {
+      text-align: center;
+  }
+  
+  #story {
+      /* background-color: whitesmoke; */
+      font-style: italic;
+      padding: .5rem;
+      margin: .5rem;
+      margin-top: 3rem;
+      font-size: 1.1em;
+      text-align:center;
+  }
+  
+  .navbar-brand {
+      font-size: 2rem;
+  }
+  
+  #foot-number {
+      text-align: end;
+  }
+
+  
+@media (max-width: 290.5px) {
+    .navbar-brand {
+          font-size: .8rem !important;
+    }
+    .maximum {
+        min-width: 250px !important;
+        max-width: 279px !important;
+    }
+}
+
+  @media  (min-width: 290.6px) and (max-width:320.5px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}
+  
+  @media (min-width:576.2px) and (max-width: 767.6px) {
+      /* .spy-links {
+          text-align:center;
+          font-size: 1.1rem;
+      }
+      .spy-list {
+          font-size: 1.1rem;
+      }
+      .serv-info {
+          font-size: 1rem;
+      }
+      #story {
+          font-size: 1.1rem;
+          text-align: center;
+      } */
+  }
+  
+  @media (min-width:767.7px) and (max-width:991.6px) {
+      /* .spy-links {
+          text-align: center;
+          font-size: 1.1rem;
+      }
+      .spy-list {
+          font-size: 1.1rem;
+      }
+      .serv-info {
+          font-size: 1rem;
+      }
+   
+  
+      #story {
+          font-size: 1.1rem;
+          text-align: center;
+      } */
+  }
+  
+  @media (min-width:991.7px) and (max-width:1199.6px) {
+      .message-div,
+      .message-sched,
+      .schedule {
+          display: contents;
+          /* background-color: whitesmoke !important; */
+          transform: translateX(-4rem) !important;
+      }
+      /* .spy-links {
+          font-size: 1.1rem;
+      }
+      .spy-list {
+          font-size: 1.1rem;
+      }
+      .serv-info {
+          font-size: 1rem;
+      }
+      #story {
+          font-size: 1.1rem;
+          text-align: center;
+      } */
+      #img1,
+      #scott-webb,
+      .melanie-block {
+      transform: translateY(3rem);
+      }
+      .message-div,
+      .message-sched,
+      .schedule
+              {
+          margin-right: 0rem;
+          display: contents;
+          transform: translateX(-4rem) !important;
+      }
+      .schedule2 {
+          display: none !important;
+      }
+      #phone-number-middle {
+          transform: translateY(-5rem) !important;
+      }
+      #move-sched{
+          transform: translateX(2rem);
+          transform: translateY(0rem);
+      }
+  }
+  
+  @media (min-width: 1199.7px) and (max-width: 1399.6px) {
+      /* .spy-links {
+          font-size: 1.1rem;
+      }
+      .spy-list {
+          font-size: 1.1rem;
+      }
+      .serv-info {
+          font-size: 1rem;
+      }
+      #story {
+          font-size: 1.1rem;
+          text-align: center;
+      } */
+      #img1,
+      #scott-webb,
+      .melanie-block {
+          transform: translateY(6rem);
+          }
+  }
+  @media (min-width: 1399.7px) {
+      /* .spy-list,
+      .spy-links, 
+      .serv-info {
+          font-size: 1.1rem;
+      }
+     #story {
+          font-size:1.3em;
+          text-align: center;
+     } */
+     #img1,
+     #scott-webb,
+     .melanie-block {
+         transform: translateY(6rem);
+         }
+  }

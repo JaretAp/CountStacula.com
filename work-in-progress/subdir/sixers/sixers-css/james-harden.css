@@ -1,0 +1,181 @@
+body {
+  background-color: rgba(87, 87, 230, .4);
+}
+
+h1 {
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 1.3rem;
+  height: 75px;
+}
+
+.sports-talk,
+.Dame,
+.Morey {
+  margin-top: 2rem;
+  background-color: aliceblue;
+  font-size: 1rem;
+}
+
+em {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+@media (max-width: 499.5px) {
+  .harden-container {
+    justify-content: center;
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .responsive-img {
+    width: 100%;
+  }
+
+  .responsive-image {
+    max-width: 20vw;
+    margin-top: 8rem;
+    max-width: 100%;
+  }
+
+  .Morey,
+  .Dame {
+    margin-top: 2rem;
+    font-size: 1rem;
+    background-color: aliceblue;
+  }
+
+}
+
+@media (min-width: 499.51px) and (max-width: 899.5px) {
+  .harden-container {
+    justify-content: center;
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .responsive-image {
+    max-width: 18vw;
+    margin-top: 6em;
+    color: aliceblue;
+  }
+
+  .sports-talk,
+  .Morey,
+  .Dame {
+    font-size: 1rem;
+  }
+
+  .first_row,
+  .second_row,
+  .third_row {
+    min-height: 300px;
+  }
+
+  .responsive-img {
+    width: 100%;
+  }
+
+  .image-container {
+    margin-top: 1.75rem;
+    justify-content: center;
+  }
+
+  .Morey {
+    font-size: 1rem;
+    background-color: aliceblue;
+    min-width: 200px;
+  }
+
+  h1 {
+    height: 85px;
+  }
+}
+
+@media (min-width: 899.6px) and (max-width: 1499.5px) {
+  .harden-container {
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .responsive-image {
+    max-width: 18vw;
+  }
+
+  .sports-talk {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    padding: 0;
+    background-color: aliceblue;
+  }
+
+  .first_row,
+  .second_row,
+  .third_row {
+    min-height: 350px;
+  }
+
+  .responsive-img {
+    max-width: 100%;
+  }
+
+  .image-container {
+    margin-top: 8rem;
+  }
+
+  .Morey,
+  .Dame {
+    font-size: 1.5rem;
+    background-color: aliceblue;
+    margin-top: 2rem;
+    padding: 0;
+  }
+
+  h1 {
+    height: 110px;
+  }
+}
+
+@media (min-width: 1499.6px) {
+
+  .responsive-img {
+    width: 100%;
+  }
+
+  .responsive-image {
+    max-width: 350px;
+  }
+
+  .sports-talk {
+    padding: 0;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    background-color: aliceblue;
+  }
+
+  .first_row,
+  .second_row,
+  .third_row {
+    min-height: 450px;
+  }
+
+  .image-container {
+    margin-top: 4rem;
+    justify-content: center;
+  }
+
+  .Morey,
+  .Dame {
+    font-size: 1.5rem;
+    background-color: aliceblue;
+    margin-top: 1.5rem;
+    padding: 0;
+  }
+
+  h1 {
+    height: 110px;
+  }
+}

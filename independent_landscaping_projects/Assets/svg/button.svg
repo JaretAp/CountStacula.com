@@ -1,0 +1,148 @@
+
+ <?xml-stylesheet type="text/css" href="../../inkscape_btn_svg_tutorial/style.css" ?>
+ <!--Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+
+   role="button"
+   aria-pressed="false"
+   width="240"
+   height="110"
+   viewBox="0 0 240 110"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="button.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="5.9402076"
+     inkscape:cx="102.18498"
+     inkscape:cy="41.749382"
+     inkscape:current-layer="svg1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="10"
+       spacingy="10"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#eb99e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient7"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0"
+         id="stop7" > 	<animate attributeName="stop-opacity" values="0;0.5;0"
+          dur="2s" repeatCount="indefinite"/>
+          </stop>
+      <stop
+         style="stop-color:#000000;stop-opacity:0.502"
+         offset="1"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#f2f2f2;stop-opacity:0.99000001;"
+         offset="0"
+         id="stop2" />
+      <stop
+         style="stop-color:#f2f2f2;stop-opacity:0;"
+         offset="0.29468241"
+         id="stop3" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2"
+       id="linearGradient3"
+       x1="130.97185"
+       y1="13.804031"
+       x2="130"
+       y2="100"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7"
+       id="radialGradient8"
+       cx="23.37711"
+       cy="141.82491"
+       fx="23.37711"
+       fy="141.82491"
+       r="110"
+       gradientTransform="matrix(2.8519866,0.00781961,-9.6766325e-4,0.35289377,-22.964017,39.768077)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <rect
+     style="fill:#ff0000;fill-opacity:0.93;stroke:#2a7fff;stroke-width:0;stroke-linejoin:bevel"
+     id="ButtonBase"
+     width="220"
+     height="90"
+     x="10"
+     y="10"
+     inkscape:label="ButtonBase"
+     ry="40" />
+  <rect
+     style="fill:url(#radialGradient8);fill-opacity:0.93;stroke:#2a7fff;stroke-width:0;stroke-linejoin:bevel;opacity:0.70000001"
+     id="ButtonGlow"
+     width="220"
+     height="90"
+     x="10"
+     y="10"
+     inkscape:label="ButtonGlow"
+     ry="40" />
+  <path
+     id="ButtonHighlight"
+     style="fill:url(#linearGradient3);fill-opacity:1;stroke:#2a7fff;stroke-width:0;stroke-linejoin:bevel"
+     d="m 100,13.867937 c 0,0 50,-0.281368 100,0.336689 1.93165,0.02388 3.41092,0.4512 5.6669,2.537885 C 220,30 212.67906,30 200,30 H 44.208607 C 31.910297,30 24.968133,30 36.934327,17.25405 39.567815,14.448956 40,14.560541 45.427973,14.215521 Z"
+     sodipodi:nodetypes="sssssscs" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.4009px;line-height:45.0876px;font-family:'Britannic Bold';-inkscape-font-specification:'Britannic Bold, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;opacity:1;mix-blend-mode:normal;fill:#000000;fill-opacity:1;stroke:#2a7ff8;stroke-width:0;stroke-linejoin:bevel;stroke-opacity:1"
+     x="38.210236"
+     y="67.225342"
+     id="text11"
+     inkscape:label="TextShadow"><tspan
+       sodipodi:role="line"
+       id="tspan11"
+       x="38.210236"
+       y="67.225342"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.4009px;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:#2a7ff8;stroke-width:0;stroke-opacity:1">BUTTON</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.4009px;line-height:45.0876px;font-family:'Britannic Bold';-inkscape-font-specification:'Britannic Bold, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;opacity:1;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke:#2a7ff8;stroke-width:0;stroke-linejoin:bevel;stroke-opacity:1"
+     x="38.210236"
+     y="66.225471"
+     id="Text"><tspan
+       sodipodi:role="line"
+       id="tspan9"
+       x="38.210236"
+       y="66.225471"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.4009px;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#2a7ff8;stroke-width:0;stroke-opacity:1">BUTTON</tspan></text>
+</svg>

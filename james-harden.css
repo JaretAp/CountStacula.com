@@ -1,0 +1,371 @@
+html {
+  font-family: 'Spectral SC', serif;
+  width: 100%;
+}
+
+body {
+  background-color: rgba(5, 5, 163, 0.872);
+  width: 100%;
+}
+
+.navbar-toggler {
+  margin-right: 10px;
+}
+
+.title-container {
+  padding: .2rem;
+}
+
+p {
+  font-family: 'Spectral SC', serif;
+  font-weight: 400;
+}
+
+h1 {
+  left: 0px;
+  right: 0px;
+  padding: 0px;
+  margin: 0px;
+  height: 75px;
+  color: rgb(240, 227, 227);
+  font-weight: bold;
+}
+
+.count-stacula-title {
+  font-family: 'Spectral SC', serif;
+  padding-left: .5rem;
+  line-height: 1;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.headline {
+  font-family: 'Spectral SC', serif;
+  font-weight: bold;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 1.2rem;
+  line-height: 5rem;
+}
+
+.container-content {
+  max-width: 992.1px;
+}
+
+.first {
+  margin-top: 3rem;
+  background-color: rgba(240, 248, 255, 0.886);
+  font-size: 1rem;
+  padding-left: .1rem;
+  padding-right: .1rem;
+  margin-left: .125rem;
+  margin-right: .125rem;
+}
+
+
+.Dame,
+.Morey {
+  margin-top: 2rem;
+  background-color: rgba(240, 248, 255, 0.886);
+  font-size: 1rem;
+  padding-left: .1rem;
+  padding-right: .1rem;
+  margin-left: .125rem;
+  margin-right: .125rem;
+}
+
+.responsive-image {
+  max-width: 30vw;
+  margin-top: 2rem;
+}
+
+.harden-container {
+  margin-left: -.6rem;
+}
+
+em {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+@media (max-width: 267.7px) {
+
+  .harden-container {
+    justify-content: center;
+    margin-top: 0;
+    max-width: 91%;
+  }
+}
+
+@media (min-width: 267.8px) and (max-width: 390.7px) {
+  .harden-container {
+    justify-content: center;
+    margin-top: 0;
+    max-width: 89.7%;
+  }
+
+
+  .responsive-img {
+    width: 100%;
+  }
+
+  .responsive-image {
+    margin-top: 2rem;
+    max-width: 28vw;
+  }
+
+
+}
+
+@media (min-width: 390.71px) and (max-width: 575.6px) {
+
+  .harden-container {
+    justify-content: center;
+    margin-top: 0;
+    max-width: 87.4%;
+  }
+
+  .responsive-image {
+    max-width: 25vw;
+    margin-top: 2em;
+  }
+}
+
+@media (min-width: 575.61px) and (max-width: 767.6px) {
+  .harden-container {
+    justify-content: center;
+    margin-top: 0;
+    max-width: 70%;
+  }
+
+  .responsive-image {
+    max-width: 20vw;
+    margin-top: 2em;
+  }
+
+  .responsive-img {
+    width: 100%;
+  }
+
+  .image-container {
+    margin-top: 1.75rem;
+    justify-content: center;
+  }
+
+  h1 {
+    height: 85px;
+  }
+}
+
+
+@media (min-width: 767.61px) and (max-width: 991.6px) {
+  .harden-container {
+    justify-content: center;
+    max-width: 60.7%;
+  }
+
+  .responsive-image {
+    max-width: 19vw;
+    margin-top: 2em;
+  }
+
+  .responsive-img {
+    max-width: 100%;
+  }
+
+  .image-container {
+    margin-top: 8rem;
+  }
+
+  h1 {
+    height: 95px;
+  }
+}
+
+@media (min-width: 991.61px) {
+
+  h1 {
+    height: 95px;
+  }
+
+  .harden-container {
+    justify-content: center;
+    max-width: 52.39%;
+    margin-top: 0;
+  }
+
+  .responsive-image {
+    max-width: 18vw;
+    margin-top: 2em;
+  }
+
+  .image-container {
+    margin-top: 8rem;
+  }
+
+  .Morey,
+  .Dame {
+    font-size: 1.15rem;
+    padding-right: .4rem;
+    padding-left: .4rem;
+  }
+
+  .first {
+    font-size: 1.15rem;
+    padding-right: .4rem;
+    padding-left: .4rem;
+  }
+
+  h1 {
+    height: 110px;
+  }
+}
+
+@media (max-width: 240.6px) {
+  .headline {
+    font-size: 1.4rem;
+    line-height: 5rem;
+    min-width: 206px;
+  }
+}
+
+@media (min-width: 240.61px) and (max-width: 280.6px) {
+  .headline {
+    font-size: 1.63rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width:280.61px) and (max-width:320.6px) {
+  .headline {
+    font-size: 1.9rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width:320.61px) and (max-width:360.6px) {
+  .headline {
+    font-size: 2.24rem;
+    line-height: 5.3rem;
+  }
+}
+
+@media (min-width:360.61px) and (max-width:400.6px) {
+  .headline {
+    font-size: 2.55rem;
+    line-height: 5.3rem;
+  }
+}
+
+@media (min-width:400.61px) and (max-width:440.6px) {
+  .headline {
+    font-size: 2.82rem;
+    line-height: 5.2rem;
+  }
+}
+
+@media (min-width:440.61px) and (max-width:480.6px) {
+  .headline {
+    font-size: 3.1rem;
+    line-height: 5.2rem;
+  }
+}
+
+@media (min-width:480.61px) and (max-width:520.6px) {
+  .headline {
+    font-size: 3.45rem;
+    line-height: 5.2rem;
+  }
+}
+
+@media (min-width:520.61px) and (max-width:560.6px) {
+  .headline {
+    font-size: 3.8rem;
+    line-height: 5.3rem;
+  }
+}
+
+@media (min-width:560.61px) and (max-width:575.6px) {
+  .headline {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+}
+
+@media (min-width:575.61px) and (max-width:640.6px) {
+  .headline {
+    font-size: 3.45rem;
+    line-height: 5.9rem;
+  }
+}
+
+@media (min-width:640.61px) and (max-width:680.6px) {
+  .headline {
+    font-size: 3.7rem;
+    line-height: 5.6rem;
+  }
+}
+
+@media (min-width:680.61px) and (max-width: 720.6px) {
+  .headline {
+    font-size: 3.9rem;
+    line-height: 5.8rem;
+  }
+}
+
+@media (min-width:720.61px) and (max-width:767.6px) {
+  .headline {
+    font-size: 4em;
+    line-height: 5.8rem;
+  }
+}
+
+@media (min-width:767.61px) and (max-width: 800.6px) {
+  .headline {
+    font-size: 3.8rem;
+    line-height: 7.2rem;
+  }
+}
+
+@media (min-width:800.61px) and (max-width:840.6px) {
+  .headline {
+    font-size: 4rem;
+    line-height: 7.7rem;
+  }
+}
+
+@media (min-width:840.61px) and (max-width:880.6px) {
+  .headline {
+    font-size: 4rem;
+    line-height: 7.5rem;
+  }
+}
+
+@media (min-width:880.61px) and (max-width:920.6px) {
+  .headline {
+    font-size: 4.2rem;
+    line-height: 7.5rem;
+  }
+}
+
+@media (min-width:920.61px) and (max-width:960.6px) {
+  .headline {
+    font-size: 4.2rem;
+    line-height: 7.5rem;
+  }
+}
+
+@media (min-width:960.61px) and (max-width:991.6px) {
+  .headline {
+    font-size: 4.5rem;
+    line-height: 7.5rem;
+  }
+}
+
+@media (min-width:991.61px) {
+
+  .headline {
+    font-size: 4.3rem;
+    line-height: 8rem;
+  }
+}

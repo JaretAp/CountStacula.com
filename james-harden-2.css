@@ -1,0 +1,467 @@
+html {
+  font-family: 'Spectral SC', serif;
+  width: 100%;
+}
+
+body {
+  background-color: rgba(5, 5, 163, 0.872);
+  width: 100%;
+}
+
+h1 {
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  height: 75px;
+  color: rgb(240, 227, 227);
+  font-weight: bold;
+}
+
+.title-container {
+  padding: .2rem;
+}
+
+.giphy-embed-container {
+  width: 100%;
+  height: 0%;
+  position: relative;
+  padding-bottom: 75%;
+}
+
+.fig-morey {
+  color: rgba(240, 248, 255, 0.886);
+  font-size: 1rem;
+}
+
+.twitter-share-button {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+p {
+  font-family: 'Spectral SC', serif;
+  font-weight: 400;
+}
+
+#author {
+  color: azure;
+  font-style: italic;
+  font-size: .85rem;
+}
+
+.giphy-embed {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.headline {
+  font-family: 'Spectral SC', serif;
+  font-weight: bold;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 1.2rem;
+  line-height: 5rem;
+
+
+
+
+}
+
+.move {
+  padding-left: .5rem;
+}
+
+.author-container {
+  margin-left: 6.5rem;
+  margin-top: 0rem;
+  position: absolute;
+}
+
+.credits {
+  margin-top: 0rem;
+  color: rgba(255, 255, 255, 0.872);
+  font-size: .5rem;
+}
+
+.update {
+  margin-top: 0rem;
+  color: rgba(255, 255, 255, 0.872);
+  font-size: .5rem;
+}
+
+
+.count-stacula-title {
+  font-family: 'Spectral SC', serif;
+  padding-left: .3rem;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+
+.container-content {
+  max-width: 992.1px;
+}
+
+
+.first {
+  margin-top: -1rem;
+  background-color: rgba(240, 248, 255, 0.886);
+  font-size: 1rem;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.responsive-image {
+  max-width: 30vw;
+  margin-top: 2rem;
+}
+
+.portland,
+.miami,
+.sixers,
+.clippers,
+.dame,
+.harden,
+.final {
+  margin-top: 2rem;
+  background-color: rgba(240, 248, 255, 0.886);
+  font-size: 1rem;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+em {
+  font-style: italic;
+  font-family: 'Spectral SC', serif;
+  line-height: 2rem;
+}
+
+@media (max-width: 267.7px) {
+
+  .picture-container-middle {
+    justify-content: center;
+    margin-top: 0;
+    max-width: 91%;
+  }
+
+  .share {
+    line-height: 1rem;
+  }
+
+  .harden-container {
+    justify-content: center;
+    margin-top: 0;
+    max-width: 91%;
+  }
+}
+
+@media (min-width: 267.8px) and (max-width: 390.7px) {
+  .picture-container-middle {
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 89.7%;
+  }
+
+  .harden-container {
+    justify-content: center;
+    margin-top: 0;
+    max-width: 89.7%;
+  }
+
+  .responsive-img {
+    width: 100%;
+  }
+
+  .responsive-image {
+    max-width: 28vw;
+    margin-top: 2em;
+  }
+
+
+}
+
+@media (min-width: 390.71px) and (max-width: 575.6px) {
+  .harden-container {
+    justify-content: center;
+    margin-top: 0;
+    max-width: 87.4%;
+  }
+
+  .picture-container-middle {
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 87.4%;
+  }
+
+  .responsive-image {
+    max-width: 25vw;
+    margin-top: 2em;
+  }
+
+}
+
+@media (min-width: 575.61px) and (max-width: 767.6px) {
+  .harden-container {
+    justify-content: center;
+    margin-top: 0;
+    max-width: 70%;
+  }
+
+  .picture-container-middle {
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 70%;
+  }
+
+
+  .responsive-image {
+    max-width: 20vw;
+    margin-top: 2em;
+  }
+
+
+  .responsive-img {
+    width: 100%;
+  }
+
+  .image-container {
+    margin-top: 1.75rem;
+    justify-content: center;
+  }
+
+
+  h1 {
+    height: 85px;
+  }
+
+}
+
+@media (min-width: 767.61px) and (max-width: 991.6px) {
+  .harden-container {
+    justify-content: center;
+    max-width: 60.7%;
+  }
+
+  .picture-container-middle {
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 60.7%;
+  }
+
+
+
+  .responsive-image {
+    max-width: 19vw;
+    margin-top: 2em;
+  }
+
+
+  .responsive-img {
+    max-width: 100%;
+  }
+
+  .image-container {
+    margin-top: 8rem;
+  }
+
+
+  h1 {
+    height: 110px;
+  }
+
+}
+
+@media (min-width: 991.61px) {
+
+
+  .first {
+    font-size: 1.2rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+  }
+
+  .portland,
+  .miami,
+  .sixers,
+  .clippers,
+  .dame,
+  .harden,
+  .final {
+    font-size: 1.2rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+  }
+
+  .harden-container {
+    justify-content: center;
+    margin-top: 0;
+    max-width: 52.39%;
+  }
+
+  .picture-container-middle {
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 52.39%;
+  }
+
+  .responsive-image {
+    max-width: 18vw;
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 240.6px) {
+  .headline {
+    font-size: 1.2rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width: 240.61px) and (max-width: 280.6px) {
+  .headline {
+    font-size: 1.45rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width:280.61px) and (max-width:320.6px) {
+  .headline {
+    font-size: 1.72rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width:320.61px) and (max-width:360.6px) {
+  .headline {
+    font-size: 2rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width:360.61px) and (max-width:400.6px) {
+  .headline {
+    font-size: 2.245rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width:400.61px) and (max-width:440.6px) {
+  .headline {
+    font-size: 2.5rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width:440.61px) and (max-width:480.6px) {
+  .headline {
+    font-size: 2.7rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width:480.61px) and (max-width:520.6px) {
+  .headline {
+    font-size: 2.95rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width:520.61px) and (max-width:560.6px) {
+  .headline {
+    font-size: 3.2rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width:560.61px) and (max-width:575.6px) {
+  .headline {
+    font-size: 3.3rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width:575.61px) and (max-width:640.6px) {
+  .headline {
+    font-size: 2.95rem;
+    line-height: 5.2rem;
+  }
+}
+
+@media (min-width:640.61px) and (max-width:680.6px) {
+  .headline {
+    font-size: 3.2rem;
+    line-height: 5.5rem;
+  }
+}
+
+@media (min-width:680.61px) and (max-width: 720.6px) {
+  .headline {
+    font-size: 3.35rem;
+    line-height: 5.5rem;
+  }
+}
+
+@media (min-width:720.61px) and (max-width:767.6px) {
+  .headline {
+    font-size: 3.6rem;
+    line-height: 5.5rem;
+  }
+}
+
+@media (min-width:767.61px) and (max-width: 800.6px) {
+  .headline {
+    font-size: 3.3rem;
+    line-height: 6.95rem;
+  }
+}
+
+@media (min-width:800.61px) and (max-width:840.6px) {
+  .headline {
+    font-size: 3.5rem;
+    line-height: 6.95rem;
+  }
+}
+
+@media (min-width:840.61px) and (max-width:880.6px) {
+  .headline {
+    font-size: 3.7rem;
+    line-height: 6.95rem;
+  }
+}
+
+@media (min-width:880.61px) and (max-width:920.6px) {
+  .headline {
+    font-size: 3.85rem;
+    line-height: 6.95rem;
+  }
+}
+
+@media (min-width:920.61px) and (max-width:960.6px) {
+  .headline {
+    font-size: 3.9rem;
+    line-height: 6.95rem;
+  }
+}
+
+@media (min-width:960.61px) and (max-width:991.6px) {
+  .headline {
+    font-size: 4rem;
+    line-height: 6.85rem;
+  }
+}
+
+@media (min-width:991.61px) {
+
+  .headline {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}

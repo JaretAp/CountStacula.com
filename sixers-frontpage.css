@@ -1,0 +1,146 @@
+html {
+  font-family: 'Spectral SC', serif;
+  width: 100%;
+}
+
+body {
+  background-color: rgba(5, 5, 163, 0.872);
+  width: 100%;
+}
+
+.count-stacula-title {
+  font-family: 'Spectral SC', serif;
+  font-weight: bolder;
+}
+
+.logo {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-left: -.4rem;
+  font-family: 'Spectral SC', serif;
+  font-weight: bolder;
+}
+
+.navbar-toggler {
+  padding-right: 1rem;
+}
+
+img {
+  padding: 0;
+}
+
+.content-container {
+  max-width: 1100px;
+}
+
+.article-title {
+  color: rgba(245, 245, 245, 0.977);
+  text-align: center;
+  font-family: 'Spectral SC', serif;
+}
+
+em {
+  font-family: 'Spectral SC', serif;
+  font-weight: bolder;
+}
+
+.trivia {
+  margin-top: .5rem;
+}
+
+#trivia-h3 {
+  color: red;
+}
+
+.p-trivia {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.right {
+  color: rgb(25, 255, 25);
+  font-size: 1.3rem;
+  margin-top: .5rem;
+}
+
+.wrong {
+  color: rgb(255, 10, 10);
+  font-size: 1.3rem;
+  margin-top: .5rem;
+}
+
+.article-container-1 {
+  margin-top: 1.4rem;
+  margin-bottom: .5rem;
+}
+
+div>a {
+  font-size: 1.2rem;
+  color: rgba(245, 245, 245, 0.865);
+}
+
+div>a:hover {
+  color: red;
+}
+
+.article-container-2 {
+  margin-top: 1.4rem;
+}
+
+button {
+  padding: 0 .5rem .1rem .5rem;
+}
+
+@media (max-width: 349.7px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  div>a {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 349.8px) and (max-width: 767.8px) {
+
+  .logo {
+    font-size: 1.3rem;
+  }
+}
+
+.article-title {
+  text-align: center;
+}
+
+.article-container-1 {
+  text-align: center;
+}
+
+.article-container-2 {
+  text-align: center;
+}
+
+@media (min-width: 767.8px) and (max-width: 1099.7px) {
+
+  .article-title {
+    text-align: center;
+  }
+
+  .article-container-1 {
+    text-align: center;
+  }
+
+  .article-container-2 {
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1099.8px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+}

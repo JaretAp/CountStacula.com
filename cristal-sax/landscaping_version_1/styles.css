@@ -1,0 +1,221 @@
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first-row {
+    height: 450px;
+    width: 100vw;
+}
+
+.footer {
+    margin-top: 1rem;
+}
+
+.row2 {
+    height: 600px;
+}
+
+div.card {
+    height: 80%;
+}
+
+.photo {
+    display: flex;
+    max-height: 500px;
+    max-width: 570px;
+    overflow: hidden;
+}
+
+#scott-webb-photo {
+    flex-shrink: 1;
+    max-width: 40%;
+    max-height: 400px;
+    overflow:hidden;
+}
+
+.melanie-block {
+    height: 750px;
+    min-width: 340px;
+}
+
+.melanie-img {
+    height: 350px;
+}
+
+.melanie-body {
+    height: 600px;
+}
+.melanie-card {
+    height: 800px;
+}
+
+#img1 {
+    object-fit:cover;
+    height: 80%;
+    width: auto;
+    max-height: 500px;
+}
+
+#daniel {
+    flex-shrink: 1;
+}
+
+.lucie-card {
+    height: 100%;
+}
+.lucie-img {
+    height: 90%;
+}
+
+#img2 {
+    object-fit: cover;
+    height: 95%;
+    width: 95%;
+    max-height: 400px;
+}
+
+#lucie {
+    display:inline-block;
+    width: 400px;
+    height: 500px;
+    overflow:visible;
+
+}
+
+h5 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+    text-decoration-line:underline;
+}
+
+.navbar-brand {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.phone {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+q {
+    text-align:center;
+}
+
+.quote {
+    text-align: center;
+}
+
+ li {
+    list-style-type: none;
+}
+
+#servicesList {
+    width: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card {
+    margin-top: 1rem;
+    max-width: 400px;
+}
+
+@media (max-width: 449.5px) {
+    .container-fluid {
+        justify-content: center;
+        align-items: center;
+    }
+    #lucie {
+        margin-bottom: 1rem;
+        min-height: 530px;
+        justify-self: center;
+    }
+    .lucie-card {
+        justify-self: center;
+    }
+    .first-row {
+        height: 450px;
+        justify-content: center;
+    }
+    .melanie-card {
+        display: flex;
+        justify-self: center;
+    }
+    .row2 {
+        justify-self: center;
+        width: 100vw;
+    }
+    .melanie-block {
+        display:flexbox;
+        justify-self: center;
+        min-width: 275px;
+        margin: 0;
+    }
+    .melanie-img {
+        justify-self: center;
+    }
+    #scott-webb-photo,
+    #img1,
+    #scott-webb,
+    #daniel,
+    #img2,
+    #watson {
+        display: none;
+    }
+}
+
+
+/* Media query for smaller screens */
+@media (min-width: 449.6px) and (max-width: 768px) {
+    .first-row {
+        justify-content: center;
+
+    }
+    .photo, #lucie {
+        max-height: 300px;
+    }
+    .photo {
+        max-width: 428px;  /* 570 * 300 / 400 */
+    }
+    #lucie {
+        max-width: 502px;
+        height: 500px;  /* 670 * 300 / 400 */
+    }
+    #scott-webb-photo,
+    #img1,
+    #scott-webb,
+    #daniel,
+    #img2,
+    #watson {
+        display: none;
+    }
+    div.card {
+        height: 80%; 
+    }
+}
+
+@media (min-width: 768.6) {
+    container-fluid {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo, div.card {
+        margin: auto;
+        text-align: center;
+    }
+}

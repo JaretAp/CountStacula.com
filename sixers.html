@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sixers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,400;0,700;1,200&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="sixers-frontpage.css">
+</head>
+
+<body class="container-fluid">
+
+  <!--This bar is designed for Stacula's main homepage. This design will be used for all pages eventually.-->
+  <div class="row sticky-top" alt="To hold the navbar, this is to replace the nav tag">
+    <!--Navbar with extra options built in-->
+
+    <nav class="navbar navbar-dark bg-danger"> <!-- Settings for navbar -->
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">Count Stacula Sixers</a> <!-- Home link  -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Count Stacula</h5> <!-- offcanvas header -->
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body"> <!-- Settings for offcanvas expandability for different screen widths-->
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                <!-- Home Page link-->
+              </li>
+              <li class="nav-item"> <!-- New Item -->
+                <a class="nav-link disabled" href="../eagles/eagles.html">Eagles</a>
+              </li>
+              <li class="nav-item"> <!-- New Item -->
+                <a class="nav-link active" aria-current="page" href="#">Sixers</a>
+              </li>
+              <li class=" nav-link"> <!-- New Item -->
+                <a class="nav-link disabled" href="#">NFL</a>
+              </li>
+              <li class="nav-item"> <!-- New Item -->
+                <a class="nav-link disabled" href="#">NBA</a>
+              </li>
+              <li class="nav-item"> <!-- New Item -->
+                <a class="nav-link disabled" href="#">Fantasy Football</a>
+              </li>
+              <li class="nav-item"> <!-- New Item -->
+                <a class="nav-link disabled" href="#">Projects</a>
+              </li>
+              <li class="nav-item"> <!-- New Item -->
+                <a class="nav-link disabled" href="../designs/designs.html">Designs</a>
+              </li>
+              <li class="nav-item dropdown"> <!-- Drop Down Menu configuration starts here -->
+                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark disabled"> <!-- Drop Down Menu Settings -->
+                  <li><a class="dropdown-item disabled" href="#">Action</a></li> <!-- Option -->
+                  <li><a class="dropdown-item disabled" href="#">Another action</a></li><!-- Option -->
+                  <li>
+                    <hr class="dropdown-divider"> <!-- Divider -->
+                  </li>
+                  <li><a class="dropdown-item disabled" href="#">Something else here</a></li> <!-- Drop Down -->
+                </ul>
+              </li>
+            </ul> <!-- End of Options before search bar -->
+
+            <form class="d-flex mt-3 disabled" role="search" disabled> <!-- Search Bar Settings -->
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" disabled>
+              <button class="btn btn-danger disabled" type="submit" disabled>Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- END OF NAVBAR SETTINGS -->
+
+  <div class="content-container mx-auto">
+    <div class="row">
+      <div class="col-12 col-md-10 px-0 offset-md-1">
+        <img src="../../stacula-images/skysports-daryl-morey-houston-rockets_4607816.jpg" alt="Daryl Morey, Sixers GM"
+          class="img-fluid">
+      </div>
+
+      <div class="col-12 col-md-10 offset-md-1">
+        <h2 class="display-6 article-title mt-4 mb-2"> Sixers Articles</h2>
+        <div class="article-container-1">
+          <a href="james-harden-2.html" id="my-article-link"><em>The Staring Game. When will Harden and Dame
+              get
+              traded?</em></a>
+        </div>
+        <div class="article-container-2">
+          <a href="james-harden.html" id="my-article-link"><em>Harden asks for a trade from the
+              Sixers</em></a>
+
+          <div class="article-container-2"><a href="#" id="my-article-link"><em>More coming soon!</em></a>
+          </div>
+        </div>
+        <section class="trivia">
+          <h3 class="text-center" id="trivia-h3">TRIVIA!</h>
+          <p class="p-trivia text-center mt-2 mb-1" id="firstQuest">What was the Sixers longest stretch without winning two games in a row?</p>
+          <button id="_116">116 games</button>
+          <button id="_112">112 games</button>
+          <button id="_108">108 games</button>
+          <button id="_102">102 games</button>
+          <p class="p-trivia text-center mt-3 mb-1" id="secondQuest">Who averages the most points per game for the Sixers in the playoffs?</p>
+          <button id="wilt">Wilt Chamberlain</button>
+          <button id="ai">Allen Iverson</button>
+          <button id="dr">Julius Erving</button>
+          <button id="jojo">Joel Embiid</button>
+          <p class="p-trivia text-center mt-3 mb-1" id="thirdQuest">Who made the most 3/gm for the Sixers with a minimum 200 games played?</p>
+          <button id="cov">Robert Covington</button>
+          <button id="kyle">Kyle Korver</button>
+          <button id="tobi">Tobias Harris</button>
+          <button id="ai3">Allen Iverson</button>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

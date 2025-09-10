@@ -1,0 +1,96 @@
+
+:root[data-theme="yellow"]{
+  --base-color: #abab66;
+  --primary-bg-color: #272121d4; /* Main background color */
+  --secondary-bg-color: rgba(10, 6, 8, 0.678); /* Secondary background color, possibly for sidebars or cards */
+  --optional-highlight-color:#ffff12c5;
+  --primary-text-color:rgb(237, 235, 235); /* Main text color */
+  --secondary-text-color: #d7c6c6; /* Secondary text, maybe for less important info or subtitles */
+  --alternate-text-color-light:rgba(245, 245, 245, 0.74);
+  --text-color-dark:rgb(34, 31, 31);
+  --primary-bg-shadow-accent:  #8e4d28a6;
+  --secondary-bg-shadow-dark:#cac0c025;
+  --alternate-bg-shadow-darker:#0b0b0ce6;
+  --emphasis-primary-text-white: #fffffffa;
+  --emphasis-primary-bg-dark:#0b0b0ce6;
+  --accent-color: rgba(220, 20, 60, 0.749); /* For buttons, highlights, or other elements you want to emphasize */
+  --overlay-gradient-dark: linear-gradient(
+    to bottom,
+    rgba(1, 0, 0, .8) 0%,
+    rgba(2, 5, 9, 0.85) 5%,
+    rgba(28, 27, 27, 0.9) 30%,
+    rgba(10, 9, 9, .85)  45%,
+    rgba(5, 12, 0, .2)  60%,
+    rgba(14, 14, 14, .1) 75%,
+    rgba(5, 23, 1, .1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  ),
+  rgba(0, 0, 0, 0) 100%;
+  --border-color: #808080e8; /* Color for borders on elements */
+  --shadow-light: #7d86836d; /* Light shadow for depth effect */
+  --shadow-dark: rgba(59, 51, 53, 0.333); /* Darker shadow for depth effect */
+}
+
+:root[data-theme="blue"] {
+  --primary-bg-color:  rgb(15, 181, 252); /* Main background color */
+  --secondary-bg-color: rgba(145, 196, 194, 0.452); /* Secondary background color, possibly for sidebars or cards */
+  --optional-highlight-color:rgb(0, 177, 253);
+  --primary-text-color: #333333; /* Main text color */
+  --secondary-text-color: rgba(245, 245, 245, 0.74); /* Secondary text, maybe for less important info or subtitles */
+  --alternate-text-color-light:rgba(20, 35, 51, 0.749);
+  --text-color-dark:rgb(34, 31, 31) ;
+  --primary-bg-shadow-accent:#0b0b0ce6 ;
+  --secondary-bg-shadow-accent:rgb(0, 177, 253) ;
+  --alternate-bg-shadow-dark:rgba(72, 68, 67, 0.616) ;
+  --emphasis-primary-text-white: #eae8e8ec;
+  --emphasis-primary-bg-dark:#0b0b0ce6 ;
+  --accent-color: #FF4500; /* For buttons, highlights, or other elements you want to emphasize */
+  --overlay-gradient-dark: linear-gradient(
+    to bottom,
+    rgba(1, 0, 0, .8) 0%,
+    rgba(2, 5, 9, 0.85) 5%,
+    rgba(28, 27, 27, 0.9) 30%,
+    rgba(10, 9, 9, .85)  45%,
+    rgba(5, 12, 0, .2)  60%,
+    rgba(14, 14, 14, .1) 75%,
+    rgba(5, 23, 1, .1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  ),
+  rgba(0, 0, 0, 0) 100%;
+  --border-color:#8e4d28a6; /* Color for borders on elements */
+  --shadow-light: rgba(0, 0, 0, 0.05); /* Light shadow for depth effect */
+  --shadow-dark: rgba(92, 82, 31, 0.185); /* Darker shadow for depth effect */
+}
+
+:root[data-theme="light"] {
+  --primary-bg-color: #FFFFFF; /* Main background color */
+  --secondary-bg-color: #F5F5F5; /* Secondary background color, possibly for sidebars or cards */
+  
+  --primary-text-color: #333333; /* Main text color */
+  --secondary-text-color: #666666; /* Secondary text, maybe for less important info or subtitles */
+  
+  --accent-color: #FF4500; /* For buttons, highlights, or other elements you want to emphasize */
+  
+  --border-color: #DDDDDD; /* Color for borders on elements */
+  
+  --shadow-light: rgba(0, 0, 0, 0.05); /* Light shadow for depth effect */
+  --shadow-dark: rgba(0, 0, 0, 0.15); 
+}
+
+:root[data-theme="dark"] {
+  /* Dark Theme */
+  
+    --primary-bg-color: #333333; /* Main background color */
+    --secondary-bg-color: #1a1a1a; /* Secondary background color, possibly for sidebars or cards */
+    
+    --primary-text-color: #EAEAEA; /* Main text color */
+    --secondary-text-color: #B0B0B0; /* Secondary text, maybe for less important info or subtitles */
+    
+    --accent-color: #FFD700; /* For buttons, highlights, or other elements you want to emphasize */
+    
+    --border-color: #555555; /* Color for borders on elements */
+    
+    --shadow-light: rgba(0, 0, 0, 0.1); /* Light shadow for depth effect */
+    --shadow-dark: rgba(0, 0, 0, 0.5); /* Darker shadow for depth effect */
+
+}

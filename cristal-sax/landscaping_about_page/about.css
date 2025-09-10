@@ -1,0 +1,2001 @@
+/* Button used to open the contact form - fixed at the bottom of the page */
+* {
+    box-sizing: border-box;
+}
+
+.open-button {
+    font-family: 'Tinos', serif;  
+    /* background-color: #eae4e4; */
+    /* color: black; */
+    color:mintcream;
+    background-color: black;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0.88;
+    position: fixed;
+    bottom: 90px;
+    right: 5px;
+    width: 220px;
+    letter-spacing: .4rem;
+    z-index: 10;
+}
+  
+@media (max-width: 810px) {
+    .open-button {
+        line-height: normal;
+        font-size: 1.1em;
+        text-align: center;
+        width: 130px;
+        letter-spacing: .2rem;
+        right: 0px;
+        padding: .5rem
+    }
+}
+  
+@keyframes flicker {
+    from {
+        text-shadow:
+        0 0 .3125rem #1ef706,0 0 .625rem #1ef706,
+        0 0 1.25rem #1ef706,0 0 2.5rem #1ef706;
+    }
+}
+
+.open-button {
+    animation: flicker 1.5s ease-in-out infinite alternate;
+}
+  
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 275px;
+    padding: 5px;
+    background-color: white;
+}
+  
+  /* Full-width input fields */
+.form-container input[type=text], .form-container input[type=text] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+  
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+  
+
+body {
+    width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#about-us {
+    font-size: 5em;
+    text-align: center;
+}
+
+#bermix {
+    width: 10rem;
+    height: 10rem;
+    float: right;
+}
+
+#bermix2 {
+    width: 10rem;
+    height: 10rem;
+    float: right;
+}
+
+#bermix3 {
+    width: 10rem;
+    height: 15rem;
+    float: left;
+}
+
+#bermix4 {
+    width: 10rem;
+    height: 12rem;
+    float: left;
+
+}
+
+.div-space2 {
+    height: 500px;
+    width: 100vw;
+}
+
+#div-space5 {
+
+    height: 500px;
+    width: 100vw;
+}
+
+#div-space6 {
+    
+    height: 350px;
+    width: 100vw;
+}
+
+footer,
+#foot-container,
+#foot-row,
+#foot-column-one,
+#foot-column-two,
+#foot-column-container-one,
+#foot-column-container-two {
+    margin-top: 0rem;
+    padding-top: 0rem;
+}
+
+footer {
+    z-index: 3;
+    min-height: 80px;
+    border-top: white;
+    border-top-style:outset;
+    border-top-width: .5rem;
+}
+
+#main1 {
+    position: relative;
+    margin-top: 1px;
+    padding: 0;
+    opacity: 1;
+    background-image: url('../../assets/Landscaping Photos/lawn-Scott-Webb.jpg');
+    background-position: 100% 0%;
+    background-attachment:fixed;
+    background-size: cover;
+    min-height: 50vh;
+    width: 100%;
+}
+
+#main2 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    background-image: url('../../assets/Landscaping Photos/dakota-lim-n_2DimPwbEk-unsplash.jpg');
+    background-position: 100% 0%;
+    background-attachment:fixed;
+    background-size: cover;
+    height: 55vh;
+    width: 100%;
+}
+
+#main3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    background-image: url('../../assets/Landscaping Photos/andres-siimon-zfwyrIA6bFw-unsplash.jpg');
+    background-position: 50%;
+    background-attachment:fixed;
+    background-size: cover;
+    height: 55vh;
+    width: 100%;
+}
+
+#main4 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    background-image: url('../../assets/Landscaping Photos/lawn-Scott-Webb.jpg');
+    background-position: 100%;
+    background-attachment:fixed;
+    background-size: cover;
+    height: 55vh;
+    width: 100%;
+}
+
+.main5 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    background-image: url('../../assets/Landscaping Photos/lawn-Scott-Webb.jpg');
+    background-position: 100%;
+    background-attachment:fixed;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+
+h1 {
+    color: white;
+    font-family: 'Playfair Display SC', serif;
+    position: absolute;
+    top: 32%;
+    margin-left: -2rem;
+    font-size: 4.5em;
+    font-weight:900;
+    font-style: italic;
+    letter-spacing:.4rem;
+    line-height: 1em;
+}
+
+
+#a {
+    color: black;
+}
+
+#heading-wrap {
+    display: relative;
+    width: 100vw;
+}
+
+nav {
+    z-index: 15;
+    border-bottom: black;
+    border-bottom-style:outset;
+    border-bottom-width: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.navbar-wrap {
+    margin-bottom: 65px;
+}
+
+.navbar{
+    min-height: 70px;
+    z-index: 3;
+}
+
+p {
+    font-family: 'Playfair Display SC', serif;
+    font-style:normal;
+    font-weight: bold;
+    color: white;
+    letter-spacing:.2em;
+    width: 100vw;
+    padding: 1rem 0;
+    margin: 0;
+    transform: translateX(4rem);
+}
+
+#first-p-letter {
+    font-size: 2em;
+    color: black;
+}
+
+#first-paragraph {
+    display: flex;
+}
+
+#second-paragraph {
+    display: flex;
+}
+#third-paragraph {
+    position: flex;
+}
+
+#fourth-paragraph {
+    position: flex;
+}
+
+#first-text {
+    font-size: 1em;
+    padding: 1rem 0;
+    margin-left: 0rem;
+    max-width: 25rem;
+    text-align: left;
+}
+
+#second-text {
+    font-size: 1em;
+    padding: 1rem 0;
+    margin-left: 0rem;
+    text-align: left;
+    max-width: 25rem;
+}
+
+#third-text {
+    font-size: 1em;
+    padding: 1rem 0;
+    margin-left: 0;
+    max-width: 25rem;
+    text-align: right;
+}
+
+#fourth-text {
+    font-size: 1em;
+    padding: 1rem 0;
+    text-align: left;
+    max-width: 25rem;
+}
+
+@media (max-width: 325.5px) {
+    
+    h1 {
+        font-size: 4em;
+        top: 40%;
+    }
+
+    #company-name {
+        color: white;
+        font-size: 1em;
+        font-family: 'Tinos', serif; 
+        font-weight: bold;
+    }
+
+    #foot-number {
+        font-size: .9em !important;
+    }
+
+    #foot-company {
+        font-size: .6em !important;
+    }
+
+    #first-text {
+        font-size: .68em;
+        margin-left: -5.5rem;
+        max-width: 16rem;
+        text-align: right;
+    }
+    
+    #bermix {
+        width: 7.5rem;
+        height: 12rem;
+        float: right;
+        margin-top: 0rem;
+        margin-bottom :0rem;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: 0;
+        padding-bottom: .5rem;
+        transform: translateY(.5rem);
+    }
+    
+    #second-text {
+        font-size: .7em;
+        margin-left: -5rem;
+        text-align: left;
+        max-width: 16rem;
+    }
+
+    #bermix2 {
+        max-width: 6rem;
+        height: 15em;
+        float: left;
+        transform: translateY(.5rem) translateX(-.4rem);
+    }
+    
+    #third-text {
+        font-size: .7em;
+        margin-left: -5.3rem;
+        max-width: 16rem;
+        text-align: right;
+        transform: translateX() translateY(.5rem);
+    }
+    
+    #bermix3 {
+        padding-right: .2rem;
+        max-width: 5.5rem;
+        height: 10rem;
+        float: right;
+        transform: translateY(.4rem)translateX(.5rem)
+    }
+    
+    #fourth-text {
+        font-size: .7em;
+        padding-top: .5rem;
+        margin-left: -4.9rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        max-width: 16rem;
+        transform: translateY(1rem) translateX();
+    }
+    
+    #bermix4 {
+        width: 7rem;
+        height: 12rem;
+        float: left;
+        margin-top: .5rem;
+        margin-bottom: .2rem;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: 0;
+        transform: translateY(-.3rem) translateX(-.3rem);
+    }
+
+    .first-p-letter {
+        font-size: 2em;
+        color: black;
+        margin-right: 0;
+        line-height: 1em;
+    }
+    #div-space {
+        height: 500px;
+        width: 100vw;
+    }
+    
+    #div-space2 {
+        height: 400px;
+        width: 100vw;
+    }
+    
+    .div-space2 {
+        height: 500px;
+        width: 100vw;
+    }
+    
+    #div-space3 {
+        height: 500px;
+        width: 100vw;
+    }
+    
+    #div-space4 {
+        height: 500px;
+        width: 100vw;
+    }
+    
+    #div-space5 {
+    
+        height: 500px;
+        width: 100vw;
+    }
+    
+    #div-space6 {
+        
+        height: 350px;
+        width: 100vw;
+    }
+
+    #main {
+        min-height: 75vh;
+    }
+    
+    
+}
+    
+
+@media (min-width: 325.6px) and (max-width: 575.5px) and (max-height: 800.5px) {
+    h1 {
+        font-size: 5.5em;
+    }
+    #company-name {
+        color: white;
+        font-size: 1.1em;
+        font-family: 'Tinos', serif; 
+        font-weight: bold;
+    }
+
+    #foot-number {
+        font-size: 1em !important;
+    }
+    
+    #foot-company {
+        font-size: .8em !important;
+    }
+     
+    #first-text {
+        font-size: .6em;
+        padding-top: .5rem;
+        max-width: 16rem;
+        text-align: right;
+        margin-left: -4rem;
+    }
+
+    #bermix {
+        width: 9rem;
+        height: 10rem;
+        float: right;
+        margin-top: 0rem;
+        margin-bottom : 0rem;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: 0;
+        padding-bottom: .5rem;
+        transform: translateY(.5rem) translateX(0rem);
+    }
+    
+    #second-text {
+        margin-left: -3.2rem;
+        font-size: .7em;
+        text-align: left;
+        max-width: 16rem;
+    }
+
+    #bermix2 {
+        width: 8rem;
+        height: 11.5em;
+        float: left;
+        padding-right: .5rem;
+
+    }
+    
+    #third-text {
+        font-size: .7em;
+        margin-left: -3.5rem;
+        max-width: 16rem;
+        text-align: right;
+        transform: translateX() translateY(.5rem);
+    }
+    
+    #bermix3 {
+        width: 7.5rem;
+        height: 11rem;
+        float: right;
+        transform: translateX(.1rem) translateY(.6rem);
+    }
+    
+    #fourth-text {
+        font-size: .65em;
+        margin-left: -3rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        max-width: 15.5rem;
+        transform: translateY(0rem) translateX();
+    }
+    #bermix4 {
+        width: 7.rem;
+        height: 10rem;
+        float: left;
+        transform: translateY(.3rem) translateX(-.5rem);
+    }
+
+    .first-p-letter {
+        font-size: 2em;
+        color: black;
+        margin-right: 0;
+        line-height: 1em;
+    }
+    
+    .div-space2 {
+        height: 365px;
+        width: 100vw;
+    }
+    
+    #div-space5 {
+    
+        height: 500px;
+        width: 100vw;
+    }
+    
+    #div-space6 {
+        
+        height: 300px;
+        width: 100vw;
+    }
+}
+
+
+@media (min-width: 325.6px) and (max-width: 575.5px) and (min-height: 800.6px) {
+    h1 {
+        font-size: 5.5em;
+        top: 30%;
+    }
+    #company-name {
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Tinos', serif; 
+        font-weight: bold;
+    }
+
+    #foot-number {
+        font-size: 1em !important;
+    }
+    
+    #foot-company {
+        font-size: .8em !important;
+    }
+     
+    #first-text {
+        font-size: .77em;
+        max-width: 20rem;
+        text-align: right;
+        transform: translateX(-.2rem);
+    } 
+    
+    #bermix {
+        width: 9rem;
+        height: 11rem;
+        float: right;
+        margin-top: 0rem;
+        margin-bottom :0rem;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: 0;
+        padding-bottom: .5rem;
+        transform: translateY(.5rem);
+    }
+    
+    #second-text {
+        font-size: .79em;
+        text-align: left;
+        max-width: 20rem;
+        transform: translateX(.2rem);
+    }
+    
+    #bermix2 {
+        width: 7.9rem;
+        height: 13em;
+        float: left;
+        padding-right: .2rem;
+        transform: translateY(0) translateX(-.3rem);
+    }
+    
+    #third-text {
+        font-size: .75em;
+        margin-left: -2rem;
+        max-width: 20rem;
+        text-align: left;
+        transform: translateX() translateY(0rem);
+    }
+    
+    #bermix3 {
+        width: 7.5rem;
+        height: 11rem;
+        float: left;
+        transform: translateX(-.3rem) translateY(.3rem);
+    }
+    
+    #fourth-text {
+        font-size: .79em;
+        margin-left: -3rem;
+        text-align: right;
+        max-width: 20rem;
+    } 
+    
+    #bermix4 {
+        width: 7.3rem;
+        height: 10rem;
+        float: right;
+        margin-top: .5rem;
+        margin-bottom: .3rem;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: 0;
+        transform: translateY(.3rem);
+    }
+
+    .first-p-letter {
+        font-size: 2.1em;
+        color: black;
+        margin-right: 0;
+        line-height: 1em;
+    }
+
+    .div-space2 {
+        height: 450px;
+        width: 100vw;
+    }
+
+    #div-space5 {
+
+        height: 500px;
+        width: 100vw;
+    }
+
+    #div-space6 {
+    
+        height: 300px;
+        width: 100vw;
+    }
+}
+
+ @media (min-width: 575.6px) and (max-width: 767.5px) and (max-height: 800.5px) {
+    
+    h1 {
+        top: 20%;
+        font-size: 7em;
+    }
+    #company-name {
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Tinos', serif; 
+        font-weight: bold;
+    }
+
+    #foot-number {
+        font-size: 1.2em !important;
+    }
+    
+    #foot-company {
+        font-size: 1em !important;
+    }
+
+    #first-text {
+        font-size: .9em;
+        padding-top: 1rem;
+        margin-left: -4rem;
+        max-width: 30rem;
+        text-align: right;
+        padding-bottom: 2.5rem;
+    }
+    
+    #bermix {
+        width: 8.5rem;
+        height: 8.5rem;
+        float: right;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: 0;
+        padding-bottom: .5rem;
+        transform: translateY(.5rem);
+    }
+    
+    #second-text {
+        font-size: .9em;
+        text-align: left;
+        max-width: 25rem;
+    }
+    
+    #bermix2 {
+        width: 7.5rem;
+        height: 9rem;
+        float: left;
+        padding: 0rem .5rem 1rem 0;
+    }
+    
+    #third-text {
+        font-size: .9em;
+        max-width: 25rem;
+        text-align: right;
+        transform: translateX() translateY(0rem);
+    }
+    
+    #bermix3 {
+        width: 7.5rem;
+        height: 8rem;
+        float: right;
+        transform: translateX(.6rem) translateY(.3rem);
+    }
+    
+    #fourth-text {
+        font-size: .9em;
+        padding-top: .5rem;
+        margin-left: -5rem;
+        text-align: left;
+        max-width: 30rem;
+        transform: translateY(1rem) translateX();
+    }
+    
+    #bermix4 {
+        width: 7.3rem;
+        height: 8rem;
+        float: left;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: .5rem;
+        transform: translateY(.3rem);
+    }
+    
+    .first-p-letter {
+        font-size: 2.6em;
+        color: black;
+        margin-right: 0;
+        line-height: 1em;
+    }
+    
+    #div-space {
+        height: 500px;
+        width: 100vw;
+    }
+
+    #div-space2 {
+        height: 400px;
+        width: 100vw;
+    }
+
+    .div-space2 {
+        height: 350px;
+        width: 100vw;
+    }
+}
+
+@media (min-width: 575.6px) and (max-width: 767.5px) and (min-height: 800.6px) {
+   
+    h1 {
+        top: 28%;
+        font-size: 7.5em;
+    }
+    #company-name {
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Tinos', serif; 
+        font-weight: bold;
+    }
+
+    #foot-number {
+        font-size: 1.2em !important;
+    }
+    
+    #foot-company {
+        font-size: 1em !important;
+    }
+     
+    #first-text {
+        font-size: .9em;
+        padding-top: 1rem;
+        margin-left: -4rem;
+        max-width: 30rem;
+        text-align: right;
+        padding-bottom: 2.5rem;
+    }
+    
+    #bermix {
+        width: 8.5rem;
+        height: 8.5rem;
+        float: right;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: 0;
+        padding-bottom: .5rem;
+        transform: translateY(.5rem);
+    }
+    
+    #second-text {
+        font-size: .9em;
+        text-align: left;
+        max-width: 30rem;
+    }
+    
+    #bermix2 {
+        width: 7.5rem;
+        height: 9rem;
+        float: left;
+        padding: 0rem .5rem 1rem 0;
+    }
+    
+    #third-text {
+        font-size: .9em;
+        max-width: 30rem;
+        text-align: right;
+        transform: translateX() translateY(0rem);
+    }
+    
+    #bermix3 {
+        width: 7.5rem;
+        height: 8rem;
+        float: right;
+        transform: translateX(.6rem) translateY(.3rem);
+    }
+    
+    #fourth-text {
+        font-size: .9em;
+        padding-top: .5rem;
+        margin-left: -5rem;
+        text-align: left;
+        max-width: 30rem;
+        transform: translateY(1rem) translateX();
+    }
+    
+    #bermix4 {
+        width: 7.3rem;
+        height: 8rem;
+        float: left;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: .5rem;
+        transform: translateY(.3rem);
+    }
+
+    .first-p-letter {
+        font-size: 2.3em;
+        color: black;
+        margin-right: 0;
+        line-height: 1em;
+    }
+
+    .div-space2 {
+        height: 350px;
+        width: 100vw;
+    }
+
+    #div-space5 {
+
+        height: 500px;
+        width: 100vw;
+    }
+
+    #div-space6 {
+    
+        height: 400px;
+        width: 100vw;
+    }
+}
+
+@media (min-width: 767.6px) and (max-width: 991.5px) and (max-height: 800.5px) {
+ 
+    h1 {
+        font-size: 7.5em;
+        top: 33%;
+    }
+    #company-name {
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Tinos', serif; 
+        font-weight: bold;
+    }
+
+    #foot-number {
+        font-size: 1.2em !important;
+    }
+    
+    #foot-company {
+        font-size: 1em !important;
+    }
+     
+    #first-text {
+        font-size: 1.1em;
+        padding-top: 1rem;
+        margin-left: -4rem;
+        max-width: 30rem;
+        text-align: right;
+        padding-bottom: 2.5rem;
+    }
+    
+    #bermix {
+        width: 8.5rem;
+        height: 11.5rem;
+        float: right;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: 0;
+        padding-bottom: .5rem;
+        transform: translateY(.5rem);
+    }
+    
+    #second-text {
+        font-size: 1.1em;
+        text-align: left;
+        max-width: 30rem;
+    }
+    
+    #bermix2 {
+        width: 7.5rem;
+        height: 11rem;
+        float: left;
+        padding: 0rem .5rem 1rem 0;
+        transform: translateY(.6rem);
+    }
+    
+    #third-text {
+        font-size: 1.1em;
+        max-width: 30rem;
+        text-align: right;
+        transform: translateX() translateY(0rem);
+    }
+    
+    #bermix3 {
+        width: 7.5rem;
+        height: 11rem;
+        float: right;
+        transform: translateX(.6rem) translateY(1rem);
+    }
+    
+    #fourth-text {
+        font-size: 1.1em;
+        padding-top: .5rem;
+        margin-left: -5rem;
+        text-align: left;
+        max-width: 30rem;
+        transform: translateY(1rem) translateX();
+    }
+    
+    #bermix4 {
+        width: 7.3rem;
+        height: 11rem;
+        float: left;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: .5rem;
+        transform: translateY(.8rem);
+    }
+    .first-p-letter {
+        font-size: 2.3em;
+        color: black;
+        margin-right: 0;
+        line-height: 1em;
+    }
+
+    .div-space2 {
+        height: 300px;
+        width: 100vw;
+    }
+
+    #div-space5 {
+
+        height: 500px;
+        width: 100vw;
+    }
+
+    #div-space6 {
+    
+        height: 300px;
+        width: 100vw;
+    }
+}
+
+@media (min-width: 767.6px) and (max-width: 991.5px) and (min-height: 800.6px) {
+   
+    h1 {
+        font-size: 7.5em;
+    }
+
+    #company-name {
+        color: white;
+        font-size: 2em;
+        font-family: 'Tinos', serif; 
+        font-weight: bold;
+    }
+
+    #foot-number {
+        font-size: 1.5em !important;
+        line-height: 1.2rem;
+    }
+    
+    #foot-company {
+        font-size: 1.2em !important;
+    }
+     
+    #first-text {
+        font-size: 1.1em;
+        padding-top: 1rem;
+        margin-left: -4rem;
+        max-width: 30rem;
+        text-align: right;
+        padding-bottom: 2.5rem;
+    }
+    
+    #bermix {
+        width: 8.5rem;
+        height: 11.5rem;
+        float: right;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: 0;
+        padding-bottom: .5rem;
+        transform: translateY(.5rem);
+    }
+    
+    #second-text {
+        font-size: 1.1em;
+        text-align: left;
+        max-width: 30rem;
+    }
+    
+    #bermix2 {
+        width: 7.5rem;
+        height: 11rem;
+        float: left;
+        padding: 0rem .5rem 1rem 0;
+        transform: translateY(.6rem);
+    }
+    
+    #third-text {
+        font-size: 1.1em;
+        max-width: 30rem;
+        text-align: right;
+        transform: translateX() translateY(0rem);
+    }
+    
+    #bermix3 {
+        width: 7.5rem;
+        height: 11rem;
+        float: right;
+        transform: translateX(.6rem) translateY(1rem);
+    }
+    
+    #fourth-text {
+        font-size: 1.1em;
+        padding-top: .5rem;
+        margin-left: -5rem;
+        text-align: left;
+        max-width: 30rem;
+        transform: translateY(1rem) translateX();
+    }
+    
+    #bermix4 {
+        width: 7.3rem;
+        height: 11rem;
+        float: left;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: .5rem;
+        transform: translateY(.8rem);
+    }
+    .first-p-letter {
+        font-size: 2.3em;
+        color: black;
+        margin-right: 0;
+        line-height: 1em;
+    }
+
+    .div-space2 {
+        height: 500px;
+        width: 100vw;
+    }
+
+    #div-space5 {
+
+        height: 500px;
+        width: 100vw;
+    }
+
+    #div-space6 {
+    
+        height: 400px;
+        width: 100vw;
+    }
+    
+    #main1 {
+        min-height: 45vh;
+    }
+
+    .navbar-wrap {
+        margin-bottom: 100px;
+    }
+    
+    .navbar{
+        min-height: 100px;
+        z-index: 3;
+    }
+}
+
+
+@media (min-width: 991.6px) and (max-width: 1199.5px) and (max-height: 800.5px) {
+   
+    h1 {
+        font-size: 7.5em;
+        top: 34%;
+    }
+    #company-name {
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Tinos', serif; 
+        font-weight: bold;
+    }
+
+    #foot-number {
+        font-size: 2em !important;
+    }
+    
+    #foot-company {
+        font-size: 1.1em !important;
+    }
+     
+    #first-text {
+        font-size: 1.3em;
+        padding-top: 1rem;
+        /* margin-left: -4rem; */
+        max-width: 40rem;
+        text-align: right;
+    }
+    
+    #bermix {
+        width: 8.5rem;
+        height: 11.5rem;
+        float: right;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: 0;
+        padding-bottom: .5rem;
+        transform: translateY(.5rem);
+    }
+    
+    #second-text {
+        font-size: 1.3em;
+        text-align: left;
+        max-width: 40rem;
+    }
+    
+    #bermix2 {
+        width: 7.5rem;
+        height: 11rem;
+        float: left;
+        padding: 0rem .5rem 1rem 0;
+        transform: translateY(.6rem);
+    }
+    
+    #third-text {
+        font-size: 1.3em;
+        max-width: 40rem;
+        text-align: right;
+        transform: translateX() translateY(0rem);
+    }
+    
+    #bermix3 {
+        width: 7.5rem;
+        height: 11rem;
+        float: right;
+        transform: translateX(.6rem) translateY(1rem);
+    }
+    
+    #fourth-text {
+        font-size: 1.3em;
+        text-align: left;
+        max-width: 40rem;
+        transform: translateY(1rem) translateX();
+    }
+    
+    #bermix4 {
+        width: 7.3rem;
+        height: 11rem;
+        float: left;
+        padding-top: .5rem;
+        padding-right: .5rem;
+    }
+    .first-p-letter {
+        font-size: 2.3em;
+        color: black;
+        margin-right: 0;
+        line-height: 1em;
+    }
+
+    .div-space2 {
+        height: 450px;
+        width: 100vw;
+    }
+
+    #div-space5 {
+
+        height: 500px;
+        width: 100vw;
+    }
+
+    #div-space6 {
+    
+        height: 400px;
+        width: 100vw;
+    }
+    #foot-number {
+        font-size: 1.7em !important;
+        line-height: 2;
+    }
+    
+    #foot-company {
+        font-size: 1.3em !important;
+        line-height: 2.5;
+    }
+}
+
+
+@media (min-width: 991.6px) and (max-width: 1199.5px) and (min-height: 800.6px) {
+   
+    h1 {
+        font-size: 8em;
+        top: 34%;
+    }
+    #company-name {
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Tinos', serif; 
+        font-weight: bold;
+    }
+
+    #foot-number {
+        font-size: 1.3em !important;
+    }
+    
+    #foot-company {
+        font-size: 1.1em !important;
+    }
+     
+    #first-text {
+        font-size: 1.3em;
+        padding-top: 1rem;
+        max-width: 40rem;
+        text-align: right;
+    }
+    
+    #bermix {
+        width: 8.5rem;
+        height: 11.5rem;
+        float: right;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: 0;
+        padding-bottom: .5rem;
+        transform: translateY(.5rem);
+    }
+    
+    #second-text {
+        font-size: 1.3em;
+        text-align: left;
+        max-width: 40rem;
+    }
+    
+    #bermix2 {
+        width: 7.5rem;
+        height: 11rem;
+        float: left;
+        padding: 0rem .5rem 1rem 0;
+        transform: translateY(.6rem);
+    }
+    
+    #third-text {
+        font-size: 1.3em;
+        max-width: 40rem;
+        text-align: right;
+        transform: translateX() translateY(0rem);
+    }
+    
+    #bermix3 {
+        width: 7.5rem;
+        height: 11rem;
+        float: right;
+        transform: translateX(.6rem) translateY(1rem);
+    }
+    
+    #fourth-text {
+        font-size: 1.3em;
+        padding-top: .5rem;
+        margin-left: -5rem;
+        text-align: left;
+        max-width: 40rem;
+        transform: translateY(1rem) translateX();
+    }
+    
+    #bermix4 {
+        width: 7.3rem;
+        height: 9.5rem;
+        float: left;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: .5rem;
+        transform: translateY(.8rem);
+    }
+    .first-p-letter {
+        font-size: 2.3em;
+        color: black;
+        margin-right: 0;
+        line-height: 1em;
+    }
+    
+    .div-space2 {
+        height: 600px;
+        width: 100vw;
+    }
+
+    #div-space5 {
+
+        height: 500px;
+        width: 100vw;
+    }
+
+    #div-space6 {
+        height: 500px;
+        width: 100vw;
+    }
+
+    #foot-number {
+        font-size: 1.7em !important;
+        line-height: 2;
+    }
+    
+    #foot-company {
+        font-size: 1.3em !important;
+        line-height: 2.5;
+    }
+}
+
+@media (min-width: 1199.6px) and (max-width: 1399.5px) {
+   
+    h1 {
+        font-size: 8em;
+        top: 30%;
+    }
+    #company-name {
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Tinos', serif; 
+        font-weight: bold;
+    }
+    
+    #first-text {
+        padding: 1rem;
+        font-size: 1.4em;
+        margin-left: 0rem;
+        max-width: 40rem;
+        text-align: right;
+        height: auto;
+        line-height: 1.5;
+    }
+
+    #bermix {
+        width: 11rem;
+        height: 15rem;
+        float: right;
+        margin-top: 0rem;
+        margin-bottom :0rem;
+        padding: 1rem 0 1rem .5rem;
+        transform: translateY(2rem);
+    }
+    
+    #second-text {
+        font-size: 1.4em;
+        padding: 1rem;
+        text-align: left;
+        max-width: 40rem;
+        transform: translateX();
+    }
+    
+    #bermix2 {
+        padding: 1rem .5rem 1rem 0;
+        width: 10rem;
+        height: 11em;
+        float: left;
+        transform: translateY(-.4rem);
+    }
+    
+    #third-text {
+        font-size: 1.4em;
+        padding: 1rem;
+        margin-left: 0rem;
+        max-width: 40rem;
+        text-align: right;
+        transform: translateX() translateY();
+    }
+    
+    #bermix3 {
+        width: 10.5rem !important;
+        height: 18rem;
+        float: right;
+        padding: 1rem 0 1rem .5rem;
+        transform: translateY(1.5rem);
+        margin-left: 1rem;
+    }
+    
+    #fourth-text {
+        padding: 1rem;
+        font-size: 1.4em;
+        text-align: left;
+        max-width: 45rem;
+        transform: translateY(1rem) translateX();
+    }
+    
+    #bermix4 {
+        width: 8rem;
+        height: 14rem;
+        float: left;
+        padding: 1rem .5rem 1rem 0;
+    }
+
+    .first-p-letter {
+        color: black;
+        font-size: 3em;
+        margin-right: 0;
+        line-height: 1em;
+    }
+
+    .div-space2 {
+        height: 450px;
+        width: 100vw;
+    }
+
+    #div-space5 {
+
+        height: 500px;
+        width: 100vw;
+    }
+
+    #div-space6 {
+    
+        height: 600px;
+        width: 100vw;
+    }
+
+    #foot-number {
+        font-size: 2.5em !important;
+        line-height: 2;
+    }
+    
+    #foot-company {
+        font-size: 2em !important;
+        line-height: 2.6;
+    }
+    
+    .open-button {
+        bottom: 140px;
+    }
+
+}
+
+@media (min-width: 1399.6px) and (max-width: 2199.5px) {
+   
+    h1 {
+        font-size: 11em;
+        top: 33%;
+    }
+    #company-name {
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Tinos', serif; 
+        font-weight: bold;
+    }
+
+    #foot-number {
+        font-size: 1.3em !important;
+    }
+    
+    #foot-company {
+        font-size: 1em !important;
+    }
+     
+    #first-text {
+        font-size: 1.3em;
+        margin-left: 0rem;
+        max-width: 40rem;
+        text-align: right;
+    }
+    
+    #bermix {
+        width: 11rem;
+        height: 11rem;
+        float: right;
+        margin-top: 0rem;
+        margin-bottom :0rem;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: 0;
+        padding-bottom: .5rem;
+        transform: translateY(1.2rem);
+    }
+    
+    #second-text {
+        font-size: 1.3em;
+        padding-top: .8rem;
+        margin-right: 1rem;
+        text-align: left;
+        max-width: 40rem;
+        padding-bottom: .8rem;
+        transform: translateX();
+    }
+    
+    #bermix2 {
+        width: 10rem;
+        height: 10rem;
+        float: left;
+        transform: translateX(-1rem) translateY(1rem)
+    }
+    
+    #third-text {
+        font-size: 1.3em;
+        margin-left: 0rem;
+        max-width: 40rem;
+        text-align: right;
+        transform: translateX() translateY();
+    }
+    
+    #bermix3 {
+        width: 10rem;
+        height: 11rem;
+        float: right;
+        padding-top: .4rem;
+        transform: translateX(1rem) translateY(1rem);
+    }
+    
+    
+    #fourth-text {
+        font-size: 1.3em;
+        padding-top: .5rem;
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        max-width: 40rem;
+        transform: translateY(1rem) translateX();
+    }
+    
+    #bermix4 {
+        width: 10rem;
+        height: 11rem;
+        float: left;
+        margin-top: .5rem;
+        margin-bottom: .3rem;
+        padding-top: .5rem;
+        padding-left: .4rem;
+        padding-right: 0;
+        transform: translateY(.8rem) translateX(-1rem);
+    }
+    .first-p-letter {
+        font-size: 2.3em;
+        color: black;
+        margin-right: 0;
+        line-height: 1em;
+    }
+
+    .div-space2 {
+        height: 600px;
+        width: 100vw;
+    }
+
+    #div-space5 {
+
+        height: 500px;
+        width: 100vw;
+    }
+
+    #div-space6 {
+    
+        height: 600px;
+        width: 100vw;
+    }
+
+    #foot-number {
+        font-size: 2.5em !important;
+        line-height: 2;
+    }
+    
+    #foot-company {
+        font-size: 2em !important;
+        line-height: 2.6;
+    }
+    
+    .open-button {
+        bottom: 140px;
+    }
+
+    #company-name {
+        font-size: 1.7em !important;
+    }
+}
+
+
+@media (min-width: 2199.6px) and (max-width: 3300.5px) {
+    h1 {
+        font-size: 12em;
+        top: 39%;
+    }
+    #company-name {
+        color: white;
+        font-size: 1.3em;
+        font-family: 'Tinos', serif; 
+        font-weight: bold;
+    }
+
+    #foot-number {
+        font-size: 1.2em !important;
+    }
+    
+    #foot-company {
+        font-size: 1.1em !important;
+    }
+
+    #main1 {
+        margin: 0;
+        min-height: 60vh;
+    }
+
+    #main2 {
+        height: 65vh;
+    }
+
+    #main3 {
+        height: 65vh;
+    }
+
+    #main4 {
+        height: 60vh;
+    }
+
+    .main5 {
+        height: 60vh;
+    }
+
+    .navbar-wrap {
+        min-height: 4rem;
+    }
+
+    .div-space2 {
+        height: 1000px;
+        width: 100vw;
+    }
+
+    #div-space5 {
+
+        height: 800px;
+        width: 100vw;
+    }
+
+    #div-space6 {
+    
+        height: 800px;
+        width: 100vw;
+    }
+     
+    #first-text {
+        max-width: 48rem;
+        text-align: right;
+        font-size: 1.5em;
+        line-height: 2em;
+        transform: translateX(10rem);
+    }
+
+    #bermix {
+        min-width: 22rem;
+        min-height: 23rem;
+        float: right;
+        transform: translateY(1rem) translateX(1rem)
+    } 
+
+    #second-text{ 
+        max-width: 48rem;
+        font-size: 1.5em;
+        text-align: left;
+        line-height: 2;
+        transform: translateX(10rem);
+    }
+
+    #bermix2 {
+        
+        width: 16rem;
+        height: 18rem;
+        float: left;
+        margin-left: 0em;
+        transform: translateY(.2rem) translateX(-1rem);
+    }
+
+    #third-text { 
+        max-width: 48rem;
+        text-align: right;
+        font-size: 1.5em;
+        line-height: 2;
+        transform: translateX(10rem);
+    }
+
+    #bermix3 {
+        width: 16rem;
+        height: 20rem;
+        float: right;
+        transform: translateY(1rem) translateX(1rem)
+    } 
+
+    #fourth-text {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: left;
+        font-size: 1.5em;
+        line-height: 2;
+        max-width: 48rem;
+        transform: translateX(10rem);
+    }
+
+    #bermix4 {
+        width: 18rem;
+        height: 20rem;
+        float: left;
+        transform: translateX(-1rem) translateY(1rem);
+    }
+
+    .first-p-letter {
+        font-size: 2.3em;
+        color: black;
+        margin-right: 0;
+        line-height: 1em;
+    }
+    
+    .div-space2 {
+        height: 800px;
+        width: 100vw;
+    }
+
+    #div-space5 {
+
+        height: 500px;
+        width: 100vw;
+    }
+
+    #div-space6 {
+    
+        height: 600px;
+        width: 100vw;
+    }
+
+    #foot-number {
+        font-size: 2.5em !important;
+        line-height: 1.2;
+    }
+    
+    #foot-company {
+        font-size: 2em !important;
+        line-height: 1.6;
+    }
+    
+    .open-button {
+        bottom: 140px;
+    }
+
+    #company-name {
+        font-size: 2.1em !important;
+    }
+}
+
+@media (min-width: 3300.6px) {
+    h1 {
+        font-size: 15em;
+        top: 35%;
+    }
+
+    #company-name {
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Tinos', serif; 
+        font-weight: bold;
+    }
+
+    #foot-number {
+        font-size: 1.3em !important;
+    }
+    
+    #foot-company {
+        font-size: 1em !important;
+    }
+
+    #main1 {
+        min-height: 55vh;
+    }
+
+    #main2 {
+        height: 65vh;
+    }
+
+    #main3 {
+        height: 65vh;
+    }
+
+    #main4 {
+        height: 60vh;
+    }
+
+    .main5 {
+        height: 60vh;
+    }
+
+    .navbar-wrap {
+        min-height: 4rem;
+    }
+
+    .div-space2 {
+        height: 1000px;
+        width: 100vw;
+    }
+
+    #div-space5 {
+
+        height: 800px;
+        width: 100vw;
+    }
+
+    #div-space6 {
+    
+        height: 800px;
+        width: 100vw;
+    }
+
+    p {
+        letter-spacing: .2em;
+    }
+
+    .first-col {
+    padding: 0;
+    } 
+    
+    #first-text {
+        max-width: 48rem;
+        text-align: right;
+        font-size: 1.5em;
+        line-height: 2em;
+        transform: translateX(30rem);
+    }
+
+    #bermix {
+        min-width: 22rem;
+        min-height: 23rem;
+        float: right;
+        transform: translateY(1rem) translateX(1rem)
+    } 
+
+    #second-text{ 
+        max-width: 48rem;
+        font-size: 1.5em;
+        text-align: left;
+        line-height: 2;
+        transform: translateX(30rem);
+    }
+
+    #bermix2 {
+        
+        width: 16rem;
+        height: 18rem;
+        float: left;
+        margin-left: 0em;
+        transform: translateY(.2rem) translateX(-1rem);
+    }
+
+    #third-text { 
+        max-width: 48rem;
+        text-align: right;
+        font-size: 1.5em;
+        line-height: 2;
+        transform: translateX(30rem);
+    }
+
+    #bermix3 {
+        width: 16rem;
+        height: 20rem;
+        float: right;
+        transform: translateY(1rem) translateX(1rem)
+    } 
+
+    #fourth-text {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: left;
+        font-size: 1.5em;
+        line-height: 2;
+        max-width: 48rem;
+        transform: translateX(30rem);
+    }
+
+    #bermix4 {
+        width: 18rem;
+        height: 20rem;
+        float: left;
+        transform: translateX(-1rem) translateY(1rem);
+    }
+
+    .first-p-letter {
+        font-size: 2.3em;
+        color: black;
+        margin-right: 0;
+        line-height: 1em;
+    }
+    
+    #foot-number,
+    #foot-company {
+        font-size: 3rem !important;
+        line-height: 1.2;
+    }
+    .open-button {
+        bottom: 110px;
+        width: 300px;
+        font-size: 3em;
+    }
+    #company-name {
+        font-size: 2.1em !important;
+    }
+    
+
+}

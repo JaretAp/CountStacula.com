@@ -1,0 +1,142 @@
+body {
+  background-color: rgba(65, 0, 88);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  height: 85%;
+}
+
+.parent>div {
+  width: 70%;
+}
+
+.img-container {
+  position: relative;
+  display: flex;
+  max-width: 420px;
+  max-height: 525px;
+  justify-content: center;
+}
+
+.responsive-image {
+  position: relative;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  margin-top: 1em;
+  height: 60px;
+  justify-content: center;
+  position: relative;
+  max-width: 660px;
+  min-width: 500px;
+}
+
+.my-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40%;
+  max-width: 70%;
+  font-size: 2.5rem;
+  padding: .5em 0;
+  background-color: rgb(245, 16, 16);
+  color: black;
+  border-style: inset;
+  border-width: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  transform: translateX(.65em);
+}
+
+.my-button:hover {
+  transform: translateY(-.25em) translateX(.65em);
+}
+
+@media (max-width: 499px) {
+  
+  body {
+    background-color: rgba(65, 0, 88);
+  }
+
+  .img-container {
+    max-width: 400px;
+    max-height: 500px;
+    min-width: 240px;
+    min-height: 300px;
+  }
+
+  .button-container {
+    position: relative;
+    margin-top: 1em;
+    min-width: 200px;
+    max-width: 300px;
+  }
+
+  .my-button {
+    position: relative;
+    justify-content: center;
+    font-size: 1em;
+    height: 20px;
+    transform: translateX(1em);
+  }
+  .my-button:hover {
+    transform: translateY(-1em) translateX(1em);
+  }
+}
+
+
+@media screen and (max-height: 660px) and (max-width: 499px) {
+  .my-button {
+    transform: translateX(.55em);
+  }
+  .my-button:hover {
+    transform: translateX(.55em) translateY(-2em);
+  }
+  .button-container {
+    margin-top: .5em;
+  }
+  .img-container {
+    max-width: 400px;
+    max-height: 500px;
+  }
+  .responsive-image {
+    height: 90%;
+  }
+}
+
+@media (min-width: 951px) and (max-width: 1199px) and (min-height:671px) {
+  
+  .button-container {
+    margin-top: 1em;
+    min-width: 250px;
+  }
+
+  .my-button {
+    font-size: 1rem;
+    padding: .7em 1em;
+    background-color: rgba(65, 0, 88);
+    color: red;
+    position: relative;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    transform: translateX(2em);
+  }
+  
+  .my-button:hover {
+    transform: translateY(-1em) translateX(2em);
+  }
+}

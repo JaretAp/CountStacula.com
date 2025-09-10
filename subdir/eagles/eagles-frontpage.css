@@ -1,0 +1,148 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  background-image: url("../../stacula-images/eagles-logo.avif");
+  background-position: bottom;
+}
+
+.carousel-instructions {
+  border-top: 0;
+  background-color: azure;
+  color: black;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  font-size: .65rem;
+}
+
+.greetings {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  background-color: azure;
+  min-height: 1.5rem;
+  margin-bottom: 0px;
+  line-height: 2rem;
+}
+
+.wrapper {
+  margin-top: 5rem;
+  max-height: 375px;
+  max-width: 300px;
+}
+
+.breakup {
+  height: 5rem;
+}
+
+@media (min-width: 330px) {
+  .wrapper {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 575.6px) {
+  .greetings {
+    font-size: 1.2rem;
+    font-style: bolder;
+  }
+
+  .carousel-instructions {
+    font-size: .65rem;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+  }
+
+  .wrapper {
+    max-height: 375px;
+    max-width: 400px;
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width:575.7px) and (max-width:767.6px) {
+  .greetings {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+
+  .carousel-instructions {
+    font-size: .65rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+  }
+
+  .wrapper {
+    max-height: 400px;
+    max-width: 425px;
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 767.7px) and (max-width: 991.6px) {
+  .greetings {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    line-height: 2rem;
+  }
+
+  .carousel-instructions {
+    font-size: .7rem;
+    margin-bottom: 2rem;
+  }
+
+  .wrapper {
+    max-height: 400px;
+    max-width: 450px;
+    margin-top: 5rem;
+  }
+
+  .breakup {
+    height: 5rem;
+  }
+
+}
+
+
+@media (min-width: 991.7px) and (max-width:1191.6px) {
+  .greetings {
+    font-style: 1.2rem;
+    font-weight: bolder;
+    max-height: 2rem;
+  }
+
+  .carousel-instructions {
+    font-size: .7rem;
+    margin-bottom: 2rem;
+  }
+
+  .wrapper {
+    max-height: 400px;
+    max-width: 4250x;
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 1192.7px) {
+  .greetings {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    max-height: 2rem;
+  }
+
+  .carousel-instructions {
+    font-size: .7rem;
+    margin-bottom: 2rem;
+  }
+
+  .wrapper {
+    max-height: 400px;
+    max-width: 475px;
+    margin-top: 5rem;
+  }
+
+  .breakup {
+    height: 5rem;
+  }
+}

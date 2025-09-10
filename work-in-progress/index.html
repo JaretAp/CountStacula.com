@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    keywords="Count Stacula, Sports, Web Development, Philadelphia Eagles, Philadelphia Sixers, NBA, NFL, Bootstrap, CSS, HTML, Fantasy Football">
+  <meta name="description"
+    content="My personally designed website that I self-host. My site is ranges from opinions, webpage designs and projects that I share.">
+  <title>Count Stacula Home Page</title>
+  <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="frontpage.css">
+</head>
+
+<body class="container-fluid">
+
+  <!--This bar is designed for Stacula's main homepage. This design will be used for all pages eventually.-->
+  <div class="row" alt="To hold the navbar, this is to replace the nav tag">
+    <!--Navbar with extra options built in-->
+
+    <nav class="navbar navbar-dark bg-danger sticky-top"> <!-- Settings for navbar -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Count Stacula</a> <!-- Navbar Branding  -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Count Stacula</h5> <!-- offcanvas header -->
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body"> <!-- Settings for offcanvas expandability for different screen widths-->
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <!-- Home Page link-->
+              </li>
+              <li class="nav-item"> <!-- New Item -->
+                <a class="nav-link" href="subdir/eagles/eagles.html">Eagles</a>
+              </li>
+              <li class="nav-item"> <!-- New Item -->
+                <a class="nav-link" href="subdir/sixers/sixers.html">Sixers</a>
+              </li>
+              <li class=" nav-link"> <!-- New Item -->
+                <a class="nav-link disabled" href="#">NFL</a>
+              </li>
+              <li class="nav-item"> <!-- New Item -->
+                <a class="nav-link disabled" href="#">NBA</a>
+              </li>
+              <li class="nav-item"> <!-- New Item -->
+                <a class="nav-link disabled" href="#">Fantasy Football</a>
+              </li>
+              <li class="nav-item"> <!-- New Item -->
+                <a class="nav-link disabled" href="#">Projects</a>
+              </li>
+              <li class="nav-item"> <!-- New Item -->
+                <a class="nav-link" href="subdir/designs/designs.html">Designs</a>
+              </li>
+              <li class="nav-item dropdown"> <!-- Drop Down Menu configuration starts here -->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark"> <!-- Drop Down Menu Settings -->
+                  <li><a class="dropdown-item disabled" href="#">Action</a></li> <!-- Option -->
+                  <li><a class="dropdown-item disabled" href="#">Another action</a></li><!-- Option -->
+                  <li>
+                    <hr class="dropdown-divider"> <!-- Divider -->
+                  </li>
+                  <li><a class="dropdown-item disabled" href="#">Something else here</a></li> <!-- Drop Down -->
+                </ul>
+              </li>
+            </ul> <!-- End of Options before search bar -->
+
+            <form class="d-flex mt-3" role="search"> <!-- Search Bar Settings -->
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-danger disabled" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- END OF NAVBAR SETTINGS -->
+
+  <!-- JUNK CODE ----- JUST EXPERIMENTING ----- TRASH CODE -->
+  <!--           ----------------------------------------------------------------------------------------         ------                          -----------------------------------------------------------------         ---------------------                    -----------------------------------------------------             ---------------------------------------------------------------------------------------------------------------->
+
+  <div class="row carousel-introduction justify-content-center">
+    <h2 class="display-5 greetings text-center"></h2>
+    <p class="carousel-instructions col-8 col-sm-6 col-lg-4"
+      alt="A series of webpages that are focused on different projects or sports."> Use the forward and back buttons to
+      navigate
+      the carousel. Browsers must support javascript.</p>
+  </div>
+
+
+  <!-- END OF JUNK CODE ---- BEGINNING OF CAROUSEL FOR WEBSITE --- THIS CODE BELOW IS NOT JUNK -->
+  <div class="row justify-content-center">
+    <div class="col-8 col-sm-6 col-lg-2 wrapper" data-bs-theme="dark"> <!-- Carousel Wrapper, Set to Dark-->
+
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <!-- data-bs-ride set to carousel, auto-carousel-->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="subdir/html/bootstrap-v1.html">
+              <img src="stacula-images/stacula_combo.png" class="d-block w-100" alt="..."></a>
+          </div>
+          <div class="carousel-item"><a href="https://countstacula.com/subdir/html/photos-with-bootstrap.html">
+              <img src="subdir/jellyfish/jellyfish-closeup.jpg" class="d-block w-100" alt="..."></a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://countstacula.com/subdir/sixers/sixers-html/james-harden.html"><img
+                src="stacula-images/James-Harden-Joel-Embiid.webp" class="d-block w-100" alt="..."></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="bootstrap-5.3.0-dist\js\bootstrap.js"></script>
+    <script src="carousel.js"></script>
+
+</html>
